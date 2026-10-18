@@ -12,7 +12,7 @@ Method 1: Create Key Pair via AWS Management Console
    - Signed in using the AWS Management Console credentials.
    - Set the region in the top-right header to N. Virginia (`us-east-1`).
 
-2. Navigate to EC2 Dashboard**
+2. Navigate to EC2 Dashboard
    - In the top search bar, typed `EC2` and opened the EC2 Dashboard.
 
 3. Access Key Pairs Section
@@ -25,7 +25,7 @@ Method 1: Create Key Pair via AWS Management Console
      - Key pair type: `RSA`
      - Private key file format: `.pem` (for OpenSSH / direct CLI access) or `.ppk` (for PuTTY on Windows).
 
-5. Generate & Save Private Key**
+5. Generate & Save Private Key
    - Clicked Create key pair.
    - The private key file downloaded automatically. Saved it securely in my local system directory (`~/.ssh/`).
 
