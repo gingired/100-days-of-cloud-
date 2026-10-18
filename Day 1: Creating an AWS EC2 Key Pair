@@ -1,0 +1,42 @@
+Day 1: Creating an AWS EC2 Key Pair
+
+Overview: In this lab, I created an SSH key pair in Amazon Web Services (AWS) using the EC2 Management Console[cite: 1]. This key pair enables secure SSH login to Linux instances or password retrieval for Windows instances without compromising server security.
+
+---
+
+Step-by-Step Implementation
+
+Method 1: Create Key Pair via AWS Management Console
+
+1. Log in to AWS Console
+   - Signed in using the AWS Management Console credentials.
+   - Set the region in the top-right header to N. Virginia (`us-east-1`).
+
+2. Navigate to EC2 Dashboard**
+   - In the top search bar, typed `EC2` and opened the EC2 Dashboard.
+
+3. Access Key Pairs Section
+   - In the left sidebar navigation menu, scrolled down to **Network & Security and clicked on Key Pairs.
+
+4. Configure Key Pair Settings
+   - Clicked Create key pair.
+   - Configured the following settings:
+     - Name: `datacenter-kp`
+     - Key pair type: `RSA`
+     - Private key file format: `.pem` (for OpenSSH / direct CLI access) or `.ppk` (for PuTTY on Windows).
+
+5. Generate & Save Private Key**
+   - Clicked Create key pair.
+   - The private key file downloaded automatically. Saved it securely in my local system directory (`~/.ssh/`).
+
+6. Verify Key Pair Creation
+   - Verified that the green success notification "Successfully created key pair" appeared.
+   - Confirmed that `datacenter-kp` is listed in the Key pairs table with type `rsa`.
+
+---
+
+Security Best Practices
+- Do NOT commit the `.pem` or `.ppk` private key file to GitHub. The private key must remain strictly on your local machine.
+- Set strict file permissions on your local machine to prevent unauthorized read access:
+  ```bash
+  chmod 400 datacenter-kp.pem
