@@ -33,7 +33,7 @@ Method 1: Create Key Pair via AWS Management Console
    - Verified that the green success notification "Successfully created key pair" appeared.
    - Confirmed that `datacenter-kp` is listed in the Key pairs table with type `rsa`.
 
-![AWS Key Pair Success](https://github.com/gingired/100-days-of-cloud-/blob/main/Key-Pair.png)
+![AWS Key Pair Success](https://raw.githubusercontent.com/gingired/100-days-of-cloud-/main/Key-Pair.png)
 ---
 
 Security Best Practices
