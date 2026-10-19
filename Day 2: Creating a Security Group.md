@@ -60,7 +60,7 @@ Confirmed the following configuration details:
 - Security Group ID: `sg-096d1347ceae68281`
 - Inbound Rules Count: 2 permission entries
 
-![Security Group Creation Confirmation](![AWS Security Group Creation](https://raw.githubusercontent.com/gingired/100-days-of-cloud-/main/Security-Group.png)
+(![AWS Security Group Creation](https://raw.githubusercontent.com/gingired/100-days-of-cloud-/main/Security-Group.png)
 
 
 Key Takeaways
