@@ -1,8 +1,6 @@
 Day 2: Creating an AWS Security Group
 
-Overview
-
-In this lab, I created a custom security group named `devops-sg` under the default VPC on Amazon Web Services (AWS) using the EC2 Management Console. This security group acts as a virtual firewall for cloud resources, regulating incoming (inbound) and outgoing (outbound) traffic.
+Overview: In this lab, I created a custom security group named `devops-sg` under the default VPC on Amazon Web Services (AWS) using the EC2 Management Console. This security group acts as a virtual firewall for cloud resources, regulating incoming (inbound) and outgoing (outbound) traffic.
 
 Requirements
 
