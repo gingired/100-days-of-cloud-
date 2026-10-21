@@ -24,12 +24,12 @@ Step 3: Initiate Allocation
 
 Step 4: Configure Public IPv4 Address Settings
 - Left the network border group at its default setting.
-- Under Public IPv4 address pool**, selected Amazon's pool of IP addresses.
+- Under Public IPv4 address pool, selected Amazon's pool of IP addresses.
 
 Step 5: Add Tags (Optional for Lab)
 - Added a tag to identify the resource:
   - Key: `Name`
-  - Value:*`nautilus-eip`
+  - Value:`nautilus-eip`
 
 Step 6: Allocate and Rename
 - Clicked Allocate to provision the Elastic IP.
