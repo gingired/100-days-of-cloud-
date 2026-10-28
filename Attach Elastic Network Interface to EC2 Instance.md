@@ -38,4 +38,4 @@ Key Takeaways:
 Flexible Networking: Elastic Network Interfaces (ENIs) enable complex network configurations, such as separating management traffic from public application traffic on a single virtual server.
 Availability Zone Constraints: Just like EBS volumes, an ENI must reside in the exact same Availability Zone as the EC2 instance it is being attached to; creating a replacement ENI in a matching subnet resolves visibility or zone mismatch hurdles during attachment.
 
-<img width="1234" height="482" alt="image" src="https://github.com/user-attachments/assets/4280c6b3-efcf-4ca9-b592-c3d66c4787c6" />
+<img width="1234" height="482" alt="image" src="https://github.com/user-attachments/assets/101adaa2-0961-461f-a18b-b4c22cdf7dda" />
