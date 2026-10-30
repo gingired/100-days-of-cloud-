@@ -14,7 +14,7 @@ Step-by-Step Implementation
 
 Step 1: Navigate to EC2 Instances
 Opened the Amazon EC2 Console and navigated to Instances --> Instances.
-Located and selected the target instance `devops-ec2` (`i-08f385e2ac174c***`).
+Located and selected the target instance `devops-ec2` (`i-08f385e2ac174c3d3`).
 
 Step 2: Initiate Image Creation
 With `devops-ec2` selected, clicked **Actions $\rightarrow$ Image and templates --> Create image**.
