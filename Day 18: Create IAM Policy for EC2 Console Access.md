@@ -1,4 +1,4 @@
-# Day 18: Create Read-Only IAM Policy for EC2 Console Access
+# Day 18: Create IAM Policy for EC2 Console Access
 
 ## Overview
 
