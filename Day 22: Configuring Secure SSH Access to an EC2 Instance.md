@@ -119,4 +119,5 @@ ssh -i keypair root@3.89.180.178
 
 <img width="1214" height="398" alt="image" src="https://github.com/user-attachments/assets/6f187311-27fc-4034-9bb1-e57c2715f72e" />
 
-<img width="852" height="317" alt="image" src="https://github.com/user-attachments/assets/1dc9dd1e-d135-41d5-a8e5-5512448324d9" />
+<img width="1090" height="491" alt="image" src="https://github.com/user-attachments/assets/4e88f5cd-394d-44a7-a814-5ca813b87cde" />
+
