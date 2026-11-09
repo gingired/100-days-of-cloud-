@@ -1,0 +1,56 @@
+# Day 23: Data Migration Between S3 Buckets Using AWS CLI
+
+## Overview
+
+In this lab, I provisioned a private S3 target bucket named **`xfusion-sync-5262-ysabel`**, synchronized all objects from a source bucket, and verified data consistency using the AWS CLI.
+
+---
+
+## Step-by-Step Implementation
+
+### Step 1: Provision the Private S3 Target Bucket
+
+* Created a new private S3 target bucket in the `us-east-1` region using the `s3api` command:
+```bash
+aws s3api create-bucket \
+  --bucket xfusion-sync-5262-ysabel \
+  --region us-east-1
+
+```
+
+
+
+### Step 2: Migrate Data Using `aws s3 sync`
+
+* Performed bulk data synchronization from the source bucket to the newly created target bucket:
+```bash
+aws s3 sync s3://<source-bucket-name> s3://xfusion-sync-5262-ysabel
+
+```
+
+
+
+### Step 3: Verify Data Consistency
+
+* Counted and compared the recursive file items across both buckets to ensure data parity:
+```bash
+aws s3 ls s3://<source-bucket-name> --recursive | wc -l
+aws s3 ls s3://xfusion-sync-5262-ysabel --recursive | wc -l
+
+```
+
+
+
+---
+
+## Troubleshooting & Challenges Encountered
+
+### 1. Global S3 Bucket Namespace Collisions (`BucketAlreadyExists`)
+
+* **Issue:** Attempting to create the exact bucket name specified in the tutorial (`xfusion-sync-5262`) failed because S3 bucket names share a single global namespace across all AWS accounts worldwide.
+* **Resolution:** Appended a personal suffix (`-ysabel`) to create a unique target bucket (`xfusion-sync-5262-ysabel`), which successfully resolved the naming conflict.
+
+### 2. Placeholder Syntax Error (`No such file or directory`)
+
+* **Issue:** Leaving placeholder strings like `<source-bucket-name>` inside the sync command caused the shell to interpret angle brackets as invalid path elements.
+* **Resolution:** Replaced the placeholder tags with actual active bucket names to ensure proper execution.
