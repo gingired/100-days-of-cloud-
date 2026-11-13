@@ -1,4 +1,4 @@
-# Day 26: Configuring an EC2 Instance as a Web Server with Nginx (My Process Documentation)
+# Day 26: Configuring an EC2 Instance as a Web Server with Nginx
 
 ---
 
