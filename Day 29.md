@@ -73,4 +73,7 @@ ping <private-ip-of-xfusion-private-ec2>
 * **Bidirectional Routing & Security:** Establishing peering requires synchronized configuration on three levels: **Peering Acceptance/DNS Settings**, **Route Table Entries** on both sides, and **Security Group Rules** allowing specific traffic (such as ICMP).
 
 <img width="1220" height="719" alt="image" src="https://github.com/user-attachments/assets/14a3be2e-fe2a-4f4d-b9b9-90a00f5a927b" />
+<img width="1467" height="427" alt="image" src="https://github.com/user-attachments/assets/7b83ddff-a845-43e1-8740-9bc79c1ada9d" />
+<img width="1467" height="427" alt="image" src="https://github.com/user-attachments/assets/a37112a4-197f-4c46-a1c1-1e2061fcf93e" />
+
 
